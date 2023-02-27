@@ -1,0 +1,238 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<helpItems xmlns="http://msh" schema="maml">
+<command:command xmlns:maml="http://schemas.microsoft.com/maml/2004/10" xmlns:command="http://schemas.microsoft.com/maml/dev/command/2004/10" xmlns:dev="http://schemas.microsoft.com/maml/dev/2004/10">
+<command:details>
+<command:name>Get-CleanUpFiles</command:name>
+<maml:description>
+<maml:para>Find Files and Folders that have been created since the specified time frame.</maml:para>
+</maml:description>
+<command:verb>Get</command:verb>
+<command:noun>CleanUpFiles</command:noun>
+</command:details>
+<maml:description>
+<maml:para>Find Files and Folders that have been created since the specified time frame.
+
+ The timestamp is based on the CreationTime property</maml:para>
+</maml:description>
+<command:syntax>
+<command:syntaxItem>
+<maml:name>Get-CleanUpFiles</maml:name>
+<command:parameter required="false" position="0" >
+<maml:name>Path</maml:name>
+<command:parameterValue required="true">String</command:parameterValue>
+</command:parameter>
+<command:parameter required="false" position="named" >
+<maml:name>CreationTime</maml:name>
+<command:parameterValue required="true">DateTime</command:parameterValue>
+</command:parameter>
+<command:parameter required="false" position="named" >
+<maml:name>Depth</maml:name>
+<command:parameterValue required="true">Int32</command:parameterValue>
+</command:parameter>
+<command:parameter required="false" position="named" >
+<maml:name>ExcludeFile</maml:name>
+<command:parameterValue required="true">String</command:parameterValue>
+</command:parameter>
+<command:parameter required="false" position="named" >
+<maml:name>ExcludeString</maml:name>
+<command:parameterValue required="true">String</command:parameterValue>
+</command:parameter>
+<command:parameter required="false" position="named" >
+<maml:name>Collapse</maml:name>
+</command:parameter>
+<command:parameter required="false" position="named" >
+<maml:name>Delete</maml:name>
+</command:parameter>
+<command:parameter required="false" position="named" >
+<maml:name>Force</maml:name>
+</command:parameter>
+<command:parameter required="false" position="named" >
+<maml:name>Recurse</maml:name>
+</command:parameter>
+</command:syntaxItem>
+</command:syntax>
+<command:parameters>
+<command:parameter required="false" pipelineInput="true (ByValue, ByPropertyName)" position="0" >
+<maml:name>Path</maml:name>
+<maml:description>
+<maml:para>Description: The path to start the search from.
+ Notes: The default is the current directory.
+ Alias:
+ ValidateSet:</maml:para>
+</maml:description>
+</command:parameter>
+<command:parameter required="false" position="named" >
+<maml:name>Collapse</maml:name>
+<maml:description>
+<maml:para>Description: Collapse the results based on the Folder Path being created in the same time frame.
+ Notes: If the Folder Path was created at in the same time frame as the files, then only the directory will flagged.
+ Alias:
+ ValidateSet:</maml:para>
+</maml:description>
+</command:parameter>
+<command:parameter required="false" position="named" >
+<maml:name>CreationTime</maml:name>
+<maml:description>
+<maml:para>Description: The time frame to search for files and folders that have been created.
+ Notes:
+ Alias:
+ ValidateSet:</maml:para>
+</maml:description>
+</command:parameter>
+<command:parameter required="false" position="named" >
+<maml:name>Delete</maml:name>
+<maml:description>
+<maml:para>Description: Automatically Delete the files and folders that are found in the search.
+ Notes: The -Force switch has to be used as well to delete the files and folders.  This is to prevent accidental deletion.
+ Alias:
+ ValidateSet:</maml:para>
+</maml:description>
+</command:parameter>
+<command:parameter required="false" position="named" >
+<maml:name>Depth</maml:name>
+<maml:description>
+<maml:para>Description: The depth of the search.
+ Notes: The default is -1, which means no limit.
+ Alias:
+ ValidateSet:</maml:para>
+</maml:description>
+</command:parameter>
+<command:parameter required="false" position="named" >
+<maml:name>ExcludeFile</maml:name>
+<maml:description>
+<maml:para>Description: A file with a list of paths to exclude from the search.
+ Notes:
+ Alias:
+ ValidateSet:</maml:para>
+</maml:description>
+</command:parameter>
+<command:parameter required="false" position="named" >
+<maml:name>ExcludeString</maml:name>
+<maml:description>
+<maml:para>Description: A string with a list of paths to exclude from the search.
+ Notes:    This is a single string with a list of paths separated by a comma.
+ Alias:
+ ValidateSet:</maml:para>
+</maml:description>
+</command:parameter>
+<command:parameter required="false" position="named" >
+<maml:name>Force</maml:name>
+<maml:description>
+<maml:para>Description: This is to acknowledge that the files and folders will be deleted.
+ Notes:
+ Alias:
+ ValidateSet:</maml:para>
+</maml:description>
+</command:parameter>
+<command:parameter required="false" position="named" >
+<maml:name>Recurse</maml:name>
+<maml:description>
+<maml:para>Description: Recurse into subdirectories.
+ Notes:
+ Alias:
+ ValidateSet:</maml:para>
+</maml:description>
+</command:parameter>
+</command:parameters>
+<command:inputTypes>
+<command:inputType>
+<dev:type>
+</dev:type>
+</command:inputType>
+</command:inputTypes>
+<command:returnValues>
+<command:returnValue>
+<dev:type>
+<maml:name>FileScanner.IOObject</maml:name>
+</dev:type>
+<maml:description>
+<maml:para>CreationDate : &lt;DateTime&gt;
+ IsDirectory  : &lt;Boolean&gt;
+ FullPath     : &lt;String&gt;
+ OnDisk       : &lt;Boolean&gt;</maml:para>
+</maml:description>
+</command:returnValue>
+</command:returnValues>
+<maml:alertSet>
+<maml:alert>
+<maml:para>
+    • [Original Author]
+    o Michael Arroyo
+ • [Original Build Version]
+    o 23.02.2201 [XX = Year (.) XX = Month (.) XX = Day XX = Build revision]
+ • [Latest Author]
+    o
+ • [Latest Build Version]
+    o
+ • [Comments]
+    o
+ • [PowerShell Compatibility]
+    o  2,3,4,5.x
+ • [Forked Project]
+    o
+ • [Links]
+    o
+ • [Dependencies]
+    o
+</maml:para>
+</maml:alert>
+</maml:alertSet>
+<command:examples>
+<command:example>
+<maml:title>-------------------------- EXAMPLE 1 --------------------------</maml:title>
+<dev:code>Get-CleanUpFiles -Path $env:TEMP</dev:code>
+<dev:remarks>
+<maml:para>
+            Description: Search for files in the users temp direcotry that have been created in the last hour.
+    Notes: The default time frame is 1 hour.</maml:para>
+<maml:para></maml:para>
+</dev:remarks>
+</command:example>
+<command:example>
+<maml:title>-------------------------- EXAMPLE 2 --------------------------</maml:title>
+<dev:code>Get-CleanUpFiles -Path $env:TEMP -CreationTime (Get-Date).AddDays(-1)</dev:code>
+<dev:remarks>
+<maml:para>
+            Description: Set the time frame to the past 24 hours.
+    Notes:</maml:para>
+<maml:para></maml:para>
+</dev:remarks>
+</command:example>
+<command:example>
+<maml:title>-------------------------- EXAMPLE 3 --------------------------</maml:title>
+<dev:code>Get-CleanUpFiles -Path &apos;C:\Temp&apos; -CreationTime (Get-Date).AddDays(-1) -Depth 1 -Recurse -ExcludeString &apos;C:\Temp\Exclude2.txt,C:\Temp\Exclude3.txt&apos;</dev:code>
+<dev:remarks>
+<maml:para>
+            Description: Search a depth of 1, while excluding the files from being tracked.
+    Notes:</maml:para>
+<maml:para></maml:para>
+</dev:remarks>
+</command:example>
+<command:example>
+<maml:title>-------------------------- EXAMPLE 4 --------------------------</maml:title>
+<dev:code>Get-CleanUpFiles -Path &apos;C:\&apos; -CreationTime (Get-Date).AddDays(-1) -Recurse -ExcludeFile &apos;.\ExcludeList.txt&apos; -Collapse</dev:code>
+<dev:remarks>
+<maml:para>
+            Description: Search the C:\ Drive for all files created in the last 24 hours, while excluding paths from the ExcludeList.txt file.
+    Notes: Use the Collapse parameter to only show the directory that was created in the same time frame as the files.</maml:para>
+<maml:para></maml:para>
+</dev:remarks>
+</command:example>
+<command:example>
+<maml:title>-------------------------- EXAMPLE 5 --------------------------</maml:title>
+<dev:code>Get-CleanUpFiles -Path &apos;C:\&apos; -CreationTime (Get-Date).AddDays(-5) -Recurse -ExcludeFile &apos;.\ExcludeList.txt&apos; -Collapse -Delete -Force</dev:code>
+<dev:remarks>
+<maml:para>
+            Description: Automatically delete all files and folders that were created in the last 5 days.
+    Notes:</maml:para>
+</dev:remarks>
+</command:example>
+</command:examples>
+<maml:relatedLinks>
+<maml:navigationLink>
+<maml:linkText>PSCleaner C# CmdLet</maml:linkText>
+<maml:uri>https://github.com/kgkzworld/PSCleaner/blob/main/README.md</maml:uri>
+</maml:navigationLink>
+</maml:relatedLinks>
+</command:command>
+</helpItems>

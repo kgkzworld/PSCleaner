@@ -1,0 +1,8 @@
+D:\Source\git\github\prv\CSharpTraining\PSCleaner\PSCleaner\PSCleaner\bin\Debug\PSCleaner.dll
+D:\Source\git\github\prv\CSharpTraining\PSCleaner\PSCleaner\PSCleaner\bin\Debug\PSCleaner.pdb
+D:\Source\git\github\prv\CSharpTraining\PSCleaner\PSCleaner\PSCleaner\bin\Debug\System.Management.Automation.dll
+D:\Source\git\github\prv\CSharpTraining\PSCleaner\PSCleaner\PSCleaner\obj\Debug\PSCleaner.csproj.AssemblyReference.cache
+D:\Source\git\github\prv\CSharpTraining\PSCleaner\PSCleaner\PSCleaner\obj\Debug\PSCleaner.csproj.CoreCompileInputs.cache
+D:\Source\git\github\prv\CSharpTraining\PSCleaner\PSCleaner\PSCleaner\obj\Debug\PSCleaner.csproj.CopyComplete
+D:\Source\git\github\prv\CSharpTraining\PSCleaner\PSCleaner\PSCleaner\obj\Debug\PSCleaner.dll
+D:\Source\git\github\prv\CSharpTraining\PSCleaner\PSCleaner\PSCleaner\obj\Debug\PSCleaner.pdb

@@ -1,0 +1,2 @@
+D:\Source\git\github\prv\CSharpTraining\PowerShellModules3
+D:\Source\git\github\prv\CSharpTraining\SendGreeting

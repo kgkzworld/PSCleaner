@@ -1,0 +1,8 @@
+D:\Source\git\github\prv\CSharpTraining\SendGreeting\SendGreeting\SendGreeting\bin\Debug\SendGreeting.dll
+D:\Source\git\github\prv\CSharpTraining\SendGreeting\SendGreeting\SendGreeting\bin\Debug\SendGreeting.pdb
+D:\Source\git\github\prv\CSharpTraining\SendGreeting\SendGreeting\SendGreeting\bin\Debug\System.Management.Automation.dll
+D:\Source\git\github\prv\CSharpTraining\SendGreeting\SendGreeting\SendGreeting\obj\Debug\SendGreeting.csproj.AssemblyReference.cache
+D:\Source\git\github\prv\CSharpTraining\SendGreeting\SendGreeting\SendGreeting\obj\Debug\SendGreeting.csproj.CoreCompileInputs.cache
+D:\Source\git\github\prv\CSharpTraining\SendGreeting\SendGreeting\SendGreeting\obj\Debug\SendGreeting.csproj.CopyComplete
+D:\Source\git\github\prv\CSharpTraining\SendGreeting\SendGreeting\SendGreeting\obj\Debug\SendGreeting.dll
+D:\Source\git\github\prv\CSharpTraining\SendGreeting\SendGreeting\SendGreeting\obj\Debug\SendGreeting.pdb
